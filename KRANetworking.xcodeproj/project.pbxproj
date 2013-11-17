@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0048D72E18383F0A00C5C5CC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0048D72D18383F0A00C5C5CC /* Cocoa.framework */; };
+		0048D73F18383F0A00C5C5CC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0048D73E18383F0A00C5C5CC /* XCTest.framework */; };
+		0048D74018383F0A00C5C5CC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0048D72D18383F0A00C5C5CC /* Cocoa.framework */; };
+		0048D74318383F0A00C5C5CC /* libKRANetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0048D72A18383F0A00C5C5CC /* libKRANetworking.a */; };
+		0048D74918383F0A00C5C5CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0048D74718383F0A00C5C5CC /* InfoPlist.strings */; };
+		0048D74B18383F0A00C5C5CC /* KRANetworkingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0048D74A18383F0A00C5C5CC /* KRANetworkingTests.m */; };
+		0048D774183856D300C5C5CC /* KRAHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 0048D76C183856D300C5C5CC /* KRAHTTPClient.h */; };
+		0048D775183856D300C5C5CC /* KRAHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0048D76D183856D300C5C5CC /* KRAHTTPClient.m */; };
+		0048D776183856D300C5C5CC /* KRAHTTPClient_Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 0048D76E183856D300C5C5CC /* KRAHTTPClient_Protected.h */; };
+		0048D777183856D300C5C5CC /* KRANetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 0048D76F183856D300C5C5CC /* KRANetworking.h */; };
+		0048D778183856D300C5C5CC /* KRAHTTPSeralizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0048D771183856D300C5C5CC /* KRAHTTPSeralizer.h */; };
+		0048D779183856D300C5C5CC /* KRAHTTPSeralizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0048D772183856D300C5C5CC /* KRAHTTPSeralizer.m */; };
+		0048D77A183856D300C5C5CC /* KRARequestSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0048D773183856D300C5C5CC /* KRARequestSerializer.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0048D74118383F0A00C5C5CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0048D72218383F0A00C5C5CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0048D72918383F0A00C5C5CC;
+			remoteInfo = KRANetworking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0048D72A18383F0A00C5C5CC /* libKRANetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKRANetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0048D72D18383F0A00C5C5CC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		0048D73018383F0A00C5C5CC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0048D73118383F0A00C5C5CC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0048D73218383F0A00C5C5CC /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		0048D73518383F0A00C5C5CC /* KRANetworking-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KRANetworking-Prefix.pch"; sourceTree = "<group>"; };
+		0048D73D18383F0A00C5C5CC /* KRANetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KRANetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0048D73E18383F0A00C5C5CC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		0048D74618383F0A00C5C5CC /* KRANetworkingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KRANetworkingTests-Info.plist"; sourceTree = "<group>"; };
+		0048D74818383F0A00C5C5CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0048D74A18383F0A00C5C5CC /* KRANetworkingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KRANetworkingTests.m; sourceTree = "<group>"; };
+		0048D76C183856D300C5C5CC /* KRAHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRAHTTPClient.h; sourceTree = "<group>"; };
+		0048D76D183856D300C5C5CC /* KRAHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRAHTTPClient.m; sourceTree = "<group>"; };
+		0048D76E183856D300C5C5CC /* KRAHTTPClient_Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRAHTTPClient_Protected.h; sourceTree = "<group>"; };
+		0048D76F183856D300C5C5CC /* KRANetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KRANetworking.h; path = Classes/KRANetworking.h; sourceTree = SOURCE_ROOT; };
+		0048D771183856D300C5C5CC /* KRAHTTPSeralizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRAHTTPSeralizer.h; sourceTree = "<group>"; };
+		0048D772183856D300C5C5CC /* KRAHTTPSeralizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRAHTTPSeralizer.m; sourceTree = "<group>"; };
+		0048D773183856D300C5C5CC /* KRARequestSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRARequestSerializer.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0048D72718383F0A00C5C5CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0048D72E18383F0A00C5C5CC /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0048D73A18383F0A00C5C5CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0048D74018383F0A00C5C5CC /* Cocoa.framework in Frameworks */,
+				0048D73F18383F0A00C5C5CC /* XCTest.framework in Frameworks */,
+				0048D74318383F0A00C5C5CC /* libKRANetworking.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0048D72118383F0A00C5C5CC = {
+			isa = PBXGroup;
+			children = (
+				0048D73318383F0A00C5C5CC /* KRANetworking */,
+				0048D74418383F0A00C5C5CC /* KRANetworkingTests */,
+				0048D72C18383F0A00C5C5CC /* Frameworks */,
+				0048D72B18383F0A00C5C5CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0048D72B18383F0A00C5C5CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0048D72A18383F0A00C5C5CC /* libKRANetworking.a */,
+				0048D73D18383F0A00C5C5CC /* KRANetworkingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0048D72C18383F0A00C5C5CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0048D72D18383F0A00C5C5CC /* Cocoa.framework */,
+				0048D73E18383F0A00C5C5CC /* XCTest.framework */,
+				0048D72F18383F0A00C5C5CC /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0048D72F18383F0A00C5C5CC /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0048D73018383F0A00C5C5CC /* Foundation.framework */,
+				0048D73118383F0A00C5C5CC /* CoreData.framework */,
+				0048D73218383F0A00C5C5CC /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		0048D73318383F0A00C5C5CC /* KRANetworking */ = {
+			isa = PBXGroup;
+			children = (
+				0048D76B183856D300C5C5CC /* Client */,
+				0048D770183856D300C5C5CC /* Request Serializer */,
+				0048D76F183856D300C5C5CC /* KRANetworking.h */,
+				0048D73418383F0A00C5C5CC /* Supporting Files */,
+			);
+			path = KRANetworking;
+			sourceTree = "<group>";
+		};
+		0048D73418383F0A00C5C5CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0048D73518383F0A00C5C5CC /* KRANetworking-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0048D74418383F0A00C5C5CC /* KRANetworkingTests */ = {
+			isa = PBXGroup;
+			children = (
+				0048D74A18383F0A00C5C5CC /* KRANetworkingTests.m */,
+				0048D74518383F0A00C5C5CC /* Supporting Files */,
+			);
+			path = KRANetworkingTests;
+			sourceTree = "<group>";
+		};
+		0048D74518383F0A00C5C5CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0048D74618383F0A00C5C5CC /* KRANetworkingTests-Info.plist */,
+				0048D74718383F0A00C5C5CC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0048D76B183856D300C5C5CC /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				0048D76C183856D300C5C5CC /* KRAHTTPClient.h */,
+				0048D76D183856D300C5C5CC /* KRAHTTPClient.m */,
+				0048D76E183856D300C5C5CC /* KRAHTTPClient_Protected.h */,
+			);
+			name = Client;
+			path = Classes/Client;
+			sourceTree = SOURCE_ROOT;
+		};
+		0048D770183856D300C5C5CC /* Request Serializer */ = {
+			isa = PBXGroup;
+			children = (
+				0048D771183856D300C5C5CC /* KRAHTTPSeralizer.h */,
+				0048D772183856D300C5C5CC /* KRAHTTPSeralizer.m */,
+				0048D773183856D300C5C5CC /* KRARequestSerializer.h */,
+			);
+			name = "Request Serializer";
+			path = "Classes/Request Serializer";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0048D72818383F0A00C5C5CC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0048D774183856D300C5C5CC /* KRAHTTPClient.h in Headers */,
+				0048D777183856D300C5C5CC /* KRANetworking.h in Headers */,
+				0048D776183856D300C5C5CC /* KRAHTTPClient_Protected.h in Headers */,
+				0048D778183856D300C5C5CC /* KRAHTTPSeralizer.h in Headers */,
+				0048D77A183856D300C5C5CC /* KRARequestSerializer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0048D72918383F0A00C5C5CC /* KRANetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0048D74E18383F0A00C5C5CC /* Build configuration list for PBXNativeTarget "KRANetworking" */;
+			buildPhases = (
+				0048D72618383F0A00C5C5CC /* Sources */,
+				0048D72718383F0A00C5C5CC /* Frameworks */,
+				0048D72818383F0A00C5C5CC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KRANetworking;
+			productName = KRANetworking;
+			productReference = 0048D72A18383F0A00C5C5CC /* libKRANetworking.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		0048D73C18383F0A00C5C5CC /* KRANetworkingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0048D75118383F0A00C5C5CC /* Build configuration list for PBXNativeTarget "KRANetworkingTests" */;
+			buildPhases = (
+				0048D73918383F0A00C5C5CC /* Sources */,
+				0048D73A18383F0A00C5C5CC /* Frameworks */,
+				0048D73B18383F0A00C5C5CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0048D74218383F0A00C5C5CC /* PBXTargetDependency */,
+			);
+			name = KRANetworkingTests;
+			productName = KRANetworkingTests;
+			productReference = 0048D73D18383F0A00C5C5CC /* KRANetworkingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0048D72218383F0A00C5C5CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = kra;
+			};
+			buildConfigurationList = 0048D72518383F0A00C5C5CC /* Build configuration list for PBXProject "KRANetworking" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0048D72118383F0A00C5C5CC;
+			productRefGroup = 0048D72B18383F0A00C5C5CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0048D72918383F0A00C5C5CC /* KRANetworking */,
+				0048D73C18383F0A00C5C5CC /* KRANetworkingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0048D73B18383F0A00C5C5CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0048D74918383F0A00C5C5CC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0048D72618383F0A00C5C5CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0048D779183856D300C5C5CC /* KRAHTTPSeralizer.m in Sources */,
+				0048D775183856D300C5C5CC /* KRAHTTPClient.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0048D73918383F0A00C5C5CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0048D74B18383F0A00C5C5CC /* KRANetworkingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0048D74218383F0A00C5C5CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0048D72918383F0A00C5C5CC /* KRANetworking */;
+			targetProxy = 0048D74118383F0A00C5C5CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0048D74718383F0A00C5C5CC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0048D74818383F0A00C5C5CC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0048D74C18383F0A00C5C5CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0048D74D18383F0A00C5C5CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0048D74F18383F0A00C5C5CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Classes/KRANetworking-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0048D75018383F0A00C5C5CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Classes/KRANetworking-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0048D75218383F0A00C5C5CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KRANetworking/KRANetworking-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "KRANetworkingTests/KRANetworkingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		0048D75318383F0A00C5C5CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KRANetworking/KRANetworking-Prefix.pch";
+				INFOPLIST_FILE = "KRANetworkingTests/KRANetworkingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0048D72518383F0A00C5C5CC /* Build configuration list for PBXProject "KRANetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0048D74C18383F0A00C5C5CC /* Debug */,
+				0048D74D18383F0A00C5C5CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0048D74E18383F0A00C5C5CC /* Build configuration list for PBXNativeTarget "KRANetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0048D74F18383F0A00C5C5CC /* Debug */,
+				0048D75018383F0A00C5C5CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0048D75118383F0A00C5C5CC /* Build configuration list for PBXNativeTarget "KRANetworkingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0048D75218383F0A00C5C5CC /* Debug */,
+				0048D75318383F0A00C5C5CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0048D72218383F0A00C5C5CC /* Project object */;
+}

@@ -1,0 +1,7 @@
+pod "KRANetworking", :path => "../"
+
+target "KRANetworking" do
+end
+
+target "KRANetworkingTests" do
+end
