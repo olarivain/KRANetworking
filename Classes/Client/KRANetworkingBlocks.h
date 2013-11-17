@@ -8,5 +8,5 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void(^KRARequestSuccessBlock)(NSURLSessionTask *task);
-typedef void(^KRARequestErrorBlock)(NSURLSessionTask *task, NSError *error);
+typedef void(^KRARequestSuccessBlock)(NSURLResponse *task, id data);
+typedef void(^KRARequestErrorBlock)(NSURLResponse *task, id data, NSError *error);

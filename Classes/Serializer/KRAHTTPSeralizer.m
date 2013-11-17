@@ -28,6 +28,7 @@
 	_timeoutDelay = timeoutDelay;
 }
 
+#pragma mark - Request building
 -(NSURLRequest *) URLRequest:(NSURL *)url
 					  method:(NSString *)method
 					 headers:(NSDictionary *)headers
