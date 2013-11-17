@@ -20,6 +20,7 @@
 		0048D778183856D300C5C5CC /* KRAHTTPSeralizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0048D771183856D300C5C5CC /* KRAHTTPSeralizer.h */; };
 		0048D779183856D300C5C5CC /* KRAHTTPSeralizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0048D772183856D300C5C5CC /* KRAHTTPSeralizer.m */; };
 		0048D77A183856D300C5C5CC /* KRARequestSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0048D773183856D300C5C5CC /* KRARequestSerializer.h */; };
+		0048D77E18385F2500C5C5CC /* KRANetworkingBlocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 0048D77D18385F2500C5C5CC /* KRANetworkingBlocks.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		0048D771183856D300C5C5CC /* KRAHTTPSeralizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRAHTTPSeralizer.h; sourceTree = "<group>"; };
 		0048D772183856D300C5C5CC /* KRAHTTPSeralizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRAHTTPSeralizer.m; sourceTree = "<group>"; };
 		0048D773183856D300C5C5CC /* KRARequestSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRARequestSerializer.h; sourceTree = "<group>"; };
+		0048D77D18385F2500C5C5CC /* KRANetworkingBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRANetworkingBlocks.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +80,7 @@
 		0048D72118383F0A00C5C5CC = {
 			isa = PBXGroup;
 			children = (
-				0048D73318383F0A00C5C5CC /* KRANetworking */,
+				0048D73318383F0A00C5C5CC /* Classes */,
 				0048D74418383F0A00C5C5CC /* KRANetworkingTests */,
 				0048D72C18383F0A00C5C5CC /* Frameworks */,
 				0048D72B18383F0A00C5C5CC /* Products */,
@@ -114,7 +116,7 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		0048D73318383F0A00C5C5CC /* KRANetworking */ = {
+		0048D73318383F0A00C5C5CC /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				0048D76B183856D300C5C5CC /* Client */,
@@ -122,6 +124,7 @@
 				0048D76F183856D300C5C5CC /* KRANetworking.h */,
 				0048D73418383F0A00C5C5CC /* Supporting Files */,
 			);
+			name = Classes;
 			path = KRANetworking;
 			sourceTree = "<group>";
 		};
@@ -154,6 +157,7 @@
 		0048D76B183856D300C5C5CC /* Client */ = {
 			isa = PBXGroup;
 			children = (
+				0048D77D18385F2500C5C5CC /* KRANetworkingBlocks.h */,
 				0048D76C183856D300C5C5CC /* KRAHTTPClient.h */,
 				0048D76D183856D300C5C5CC /* KRAHTTPClient.m */,
 				0048D76E183856D300C5C5CC /* KRAHTTPClient_Protected.h */,
@@ -181,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0048D774183856D300C5C5CC /* KRAHTTPClient.h in Headers */,
+				0048D77E18385F2500C5C5CC /* KRANetworkingBlocks.h in Headers */,
 				0048D777183856D300C5C5CC /* KRANetworking.h in Headers */,
 				0048D776183856D300C5C5CC /* KRAHTTPClient_Protected.h in Headers */,
 				0048D778183856D300C5C5CC /* KRAHTTPSeralizer.h in Headers */,

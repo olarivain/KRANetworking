@@ -8,5 +8,5 @@
 
 #import <Foundation/Foundation.h>
 
-#import <KraNetworking/KRANetworkingBlocks.h>
-#import <KraNetworking/KRAHTTPClient.h>
+typedef void(^KRARequestSuccessBlock)(NSURLSessionTask *task);
+typedef void(^KRARequestErrorBlock)(NSURLSessionTask *task, NSError *error);
